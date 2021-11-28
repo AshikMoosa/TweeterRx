@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@400;500;600;700;900&family=Poppins:wght@400;500;600;700;900&display=swap");
+:root {
+  --primary-color: #2f80ed;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans Display";
+  width: 100%;
+}
+
+.homepage-lock {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.homepage-lock .left-col {
+  width: 50%;
+}
+
+.homepage-lock .left-col img {
+  width: 50vw;
+  height: 100vh;
+}
+
+.homepage-lock .right-col {
+  width: 50%;
+  background-color: black;
+  color: white;
+  padding: 10em 7em;
+}
+
+.homepage-lock .right-col h1 {
+  font-size: 64px;
+  font-weight: 800;
+}
+
+.homepage-lock .right-col h3 {
+  font-size: 32px;
+}
+
+.homepage-lock .right-col .right-col-btn {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 1em;
+}
+
+.homepage-lock .right-col .right-col-btn button {
+  color: white;
+  background-color: var(--primary-color);
+  height: 4em;
+  border-radius: 2em;
+  border: 1px solid black;
+}
+
+@media only screen and (max-width: 768px) {
+  .homepage-lock {
+    width: 100%;
+    height: 100vh;
+    display: block;
+  }
+  .homepage-lock .left-col {
+    width: auto;
+  }
+  .homepage-lock .left-col img {
+    width: 100vw;
+    height: 100vh;
+  }
+  .homepage-lock .right-col {
+    width: auto;
+    background-color: black;
+    color: white;
+  }
+  .homepage-lock .right-col img {
+    width: 100px;
+  }
+  .homepage-lock .right-col h1 {
+    font-size: 24px;
+    font-weight: 800;
+  }
+  .homepage-lock .right-col h3 {
+    font-size: 12px;
+  }
+  .homepage-lock .right-col .right-col-btn {
+    display: -ms-grid;
+    display: grid;
+    grid-column-gap: 1em;
+  }
+  .homepage-lock .right-col .right-col-btn button {
+    color: white;
+    background-color: var(--primary-color);
+    height: 4em;
+    border-radius: 2em;
+    border: 1px solid black;
+  }
+}
+/*# sourceMappingURL=App.css.map */
